@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL,"Turkish"); //Türkçe karakter kodlaması
+	int sayi;
+	int fa=1;
+	cout<<"Sayi Giriniz :";
+	cin>>sayi;
+	
+	for(int i=1; i<=sayi;i++) 
+	fa*=i; //fa=fa*i; şeklinde de kullanılabilir.
+	
+	cout<<"Girilen Sayının Faktöriyeli :"<<fa;
+
+	
+	return 0;
+
+}
