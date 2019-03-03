@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	cout<<"sayi giriniz: "; //cout<<""; =ekrana yazdırmak için
+	cin>>a; //cin>>a; =dışarıdan veri almak için
+	
+	setlocale(LC_ALL,"Turkish"); //Türkçe karakter kodu
+	for(int i=0; i<=a;i++)
+	{
+		if(i%2==0)
+		{
+		cout<<"çift: ";
+		cout<<i<<endl;
+		
+	    }
+	    else
+	    {
+	    	cout<<"tek :";
+	    	cout<<i<<endl;
+		}	
+	}
+}
