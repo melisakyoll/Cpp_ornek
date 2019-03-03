@@ -1,2 +1,2 @@
 # Cpp_ornek
-C++ örnekleri
+C++ dilindeki örnekler
