@@ -1,0 +1,6 @@
+#include <iostream> //bu kütüphane bilgisayar ekranına birşeyler yazdırıp, programa klavye ile değer girilmesini sağlayan işlevleri barındırır.
+using namespace std; //eğer bir fonksiyonun başına bir şey yazılmazsa bunu std’nin içinde ara demektir. 
+int main()
+{
+  cout<<"Merhaba Dunya"; //ekrana yazı bastırmayı sağlar.
+}
