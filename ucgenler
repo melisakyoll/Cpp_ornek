@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cmath> //matematiksel işlemler için kullanılır
+#include<stdlib.h>//abs için kullandık.
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL,"Turkish");
+	label: // işlemden sonra label koyduğumuz yerden başlar.
+		int k1,k2,k3;
+		cout<<"1.kenarı gir: "<<endl;
+		cin>>k1;
+		cout<<"2.kenarı gir: "<<endl;
+		cin>>k2;
+		cout<<"3.kenarı gir: "<<endl;
+		cin>>k3;
+
+		if((abs(k1-k2)<k3 && k3<k1+k2 || (abs(k1-k3))<k2 && k2<k1+k3 || (abs(k3-k2))<k1 && k1<k3+k2))//abs: mutlak değer alma işlemidir
+		{
+				if(k1==k2&& k3==k2 && k3==k1) cout<<"eşkenar üçgen"<<endl;
+				
+				else if(k1==sqrt(pow(k2,2)+pow(k3,2))|| k2==sqrt(pow(k1,2)+pow(k3,2))||k3==sqrt(pow(k2,2)+pow(k1,2))) cout<<"dik üçgen"<<endl;
+				/*pow: üs almaya yarar. sqrt: kök alır.
+				 yukarıda dik üçgen olma kuralını yazdık.*/
+				else if((a==b && b!=c) ||(a==c && c!=b) || (c==b && b!=a)) cout<<"ikizkenar üçgen"<<endl;
+				else{
+					cout<<"çeşit kenar üçgen"<<endl;
+				    }
+				    goto label; //label olan yere gitmeye yarar.
+		}
+		else
+		{
+			cout<<"bunlardan üçgen olmaz"<<endl;
+			goto label;
+		}
+	
+}
