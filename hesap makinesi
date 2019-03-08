@@ -1,0 +1,95 @@
+#include <iostream>
+#include <cmath>// matematiksel işlem için 
+#include <windows.h>   //consol başlığı için ekledim
+
+//system("cls"); ekranı temizler | sqrt(x); karekök | pow(a,s): kuvvet alma (a üssü s)
+using namespace std;
+int main()
+{
+
+ setlocale(LC_ALL,"Turkish");
+SetConsoleTitle("Hesap Makinesi"); //Consol başlığı
+
+ int z;
+label:// başa dönmek isteğimiz yere label yazıyoruz.
+ cout<<"bir işlem seç:"<<endl;
+ cout<<"1.toplam\n 2.çıkarma\n 3.çarpma\n 4.bölme\n 5.karekök\n 6.üs\n "<<endl;
+ cin>>z;
+  switch(z) 
+  {
+  	case 1:
+  	{
+  		system("cls"); //Ekranı temizledik
+  		int a,b;
+	    cout<<"1.sayıyı gir:";
+	    cin>>a;
+		cout<<"2.sayıyı gir:";
+		cin>>b;
+		cout<<"sonuç: "<<a+b<<endl;	
+    }
+    break;
+    case 2: 
+    {
+    	system("cls");
+    	int a,b;
+	    cout<<"1.sayıyı gir:";
+	    cin>>a;
+		cout<<"2.sayıyı gir:";
+		cin>>b;
+		cout<<"sonuç: "<<a-b<<endl;	
+	}
+	break;
+	case 3:
+  	{
+  		system("cls");
+  		int a,b;
+	    cout<<"1.sayıyı gir:";
+	    cin>>a;
+		cout<<"2.sayıyı gir:";
+		cin>>b;
+		cout<<"sonuç: "<<a*b<<endl;	
+    }
+    break;
+    case 4:
+  	{
+  		system("cls");
+  		int a,b;
+	    cout<<"1.sayıyı gir:";
+	    cin>>a;
+		cout<<"2.sayıyı gir:";
+		cin>>b;
+		cout<<"sonuç: "<<a/b<<endl;	
+    }
+    break;
+    case 5:
+  	{
+  		system("cls");
+  		int a;
+	    cout<<"sayıyı gir:";
+	    cin>>a;
+		cout<<"sonuç: "<<sqrt(a)<<endl;	
+    }
+    break;
+     case 6:
+  	{
+      	system("cls");
+  		int a,b;
+	    cout<<"taban giriniz:";
+	    cin>>a;
+		cout<<"üs giriniz: ";
+		cin>>b;	
+		cout<<"sonuç: "<<pow(a,b)<<endl;	
+    }
+    
+    break;
+    default:
+    	
+	{
+	cout<<"Hata Yanlış Seçim Yaptınız. \n";
+	break;
+  }
+}
+cout<<endl; // boşluk bıraktık
+goto label; //işlem oldukça başa dönüyor.
+}
+  
