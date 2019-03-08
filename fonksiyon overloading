@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int karesi(int a) //karesi adında int bir fonksiyon tanımlıyoruz.
+{
+  return a*a; //a'nın karesinin değerini döndürüyor.
+}
+
+double karesi(double b) //karesi adında double bir fonksiyon tanımlıyoruz.
+{
+  return b*b; //b'nin karesinin değerini döndürüyor.
+}
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+    int c;
+	  cout<<"işlem türü seçiniz: "<<endl;
+	  cout<<"1. Tam sayı\n2. Ondalıklı sayı "<<endl;
+	  cin>>c;
+	  switch(c)
+	  {
+		  case 1:
+		  { 
+		    int a;
+		    cout<<"sayıyı gir:"<<endl;
+		    cin>>a;
+		    cout<<"tam sayının karesi: "<<karesi(a)<<endl;	
+		  }
+		      break;
+		  case 2:
+		  { 
+		     int b;
+		     cout<<"sayıyı gir:"<<endl;
+         cin>>b;
+		     cout<<"ondalıklı sayının karesi: "<<karesi(b);
+		}
+		      break;
+		return 0;
+
+}
